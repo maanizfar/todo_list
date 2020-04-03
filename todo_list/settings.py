@@ -21,7 +21,7 @@ ALLOWED_HOSTS = []
 INSTALLED_APPS = [
 
     # local apps
-    'accounts.apps.AccountsConfig'
+    'accounts.apps.AccountsConfig',
 
     # built-in apps
     'django.contrib.admin',
