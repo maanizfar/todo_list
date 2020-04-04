@@ -11,6 +11,7 @@ rope = "*"
 [packages]
 django = "*"
 django-crispy-forms = "*"
+python-dotenv = "*"
 
 [requires]
 python_version = "3.7"
