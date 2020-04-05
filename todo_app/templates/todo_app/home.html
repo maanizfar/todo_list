@@ -1,0 +1,19 @@
+{% extends 'todo_app/base.html' %}
+
+{% block title %}Todo App{% endblock title %}
+
+{% block content %}
+
+<h1 class="display-4 text-center">Welcome, {{user.username}}!</h1>
+<br>
+{% for task in tasks %}
+<div class="card">
+    <div class="card-text task-text">{{task.text}}</div>
+    <div class='task-btns'>
+        <a href="{% url 'edit_task' task.pk %}" class=" btn btn-primary task-btn">Edit</a>
+        <a href="{% url 'delete_task' task.pk %}" class="btn btn-danger task-btn">Delete</a>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock content %}
