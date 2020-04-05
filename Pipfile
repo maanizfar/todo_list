@@ -12,6 +12,7 @@ rope = "*"
 django = "*"
 django-crispy-forms = "*"
 python-dotenv = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.7"
