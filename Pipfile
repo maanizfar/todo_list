@@ -13,6 +13,7 @@ django = "*"
 django-crispy-forms = "*"
 python-dotenv = "*"
 gunicorn = "*"
+django-heroku = "*"
 
 [requires]
 python_version = "3.7"
