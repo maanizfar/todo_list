@@ -23,6 +23,7 @@ INSTALLED_APPS = [
 
     # local apps
     'accounts.apps.AccountsConfig',
+    'todo_app.apps.TodoAppConfig',
 
     # third party apps
     'crispy_forms',
@@ -120,7 +121,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 
 LOGIN_REDIRECT_URL = '/'
-L0GOUT_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = 'login'
 
 # email settings for password reset
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
